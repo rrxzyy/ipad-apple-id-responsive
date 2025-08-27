@@ -705,6 +705,10 @@ html,
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -739,10 +743,6 @@ html,
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .flex {
@@ -1109,30 +1109,6 @@ html,
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/entertain\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/entertain.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/ipados\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/ipados.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/kreativ\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/kreativ.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/learning\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/learning.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/pensil\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/pensil.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/produktif\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/produktif.jpg');
 }
 
 .bg-no-repeat {
