@@ -16,4 +16,4 @@ This project was developed under the guidance of [Naufaldi](https://github.com/n
 ## Demo
 
 Live preview available here:  
-👉 [iPad Apple ID Responsive Website](https://ipad-apple-id-responsive-h1u598z17-rrxzyys-projects.vercel.app/)
+👉 [iPad Apple ID Responsive Website](https://ipad-apple-id-responsive.vercel.app/)
