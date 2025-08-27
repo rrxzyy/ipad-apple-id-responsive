@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply font-roboto font-normal text-base text-gray-900;
+  }
+  .swiper {
+    @apply w-full h-[560px];
+  }
+  .swiper-slide {
+    @apply w-[400px] flex;
+  }
+  .btn-next {
+    @apply h-8 w-8 rounded-full flex justify-center items-center bg-gray-600 text-white fill-current;
+  }
+  .btn-prev {
+    @apply h-8 w-8 rounded-full flex justify-center items-center bg-gray-600 text-white fill-current;
+  }
+  .btn-next.swiper-button-disabled,
+  .btn-prev.swiper-button-disabled {
+    @apply opacity-75 cursor-not-allowed;
+  }
+  .grid-list {
+    grid-template-rows: minmax(160px, max-content), minmax(120px, max-content), minmax(120px, max-content);
+    @apply gap-8 items-center justify-center text-center text-xs;
+  }
+}
