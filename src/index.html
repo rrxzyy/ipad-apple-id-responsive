@@ -15,8 +15,8 @@
 <body>
   <!-- Navigation -->
   <header class="w-full bg-background-gray">
-    <nav class="max-w-[960px] mx-auto w-full flex h-[56px] items-center" data-aos="fade" data-aos-duration="500"
-      data-aos-easing="ease-in-out" data-aos-delay="50">
+    <nav class="max-w-[960px] mx-auto w-full flex h-[56px] items-center px-4 md:px-6 justify-between" data-aos="fade"
+      data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50">
       <div>
         <svg class="h-[44px] w-[14px] cursor-pointer" viewBox="0 0 14 44" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -24,7 +24,7 @@
           </path>
         </svg>
       </div>
-      <ul class="w-full flex justify-between items-center mx-[56px] text-sm">
+      <ul class="hidden lg:flex w-full justify-between items-center mx-[56px] text-sm">
         <!-- Dropdown Group Mac -->
         <div class="group cursor-pointer">
           <li>Mac</li>
@@ -455,8 +455,10 @@
         </svg>
       </div>
     </nav>
-    <nav class="max-w-[960px] mx-auto w-full flex">
-      <div class="w-full flex py-6 justify-center items-end gap-10">
+    <!-- 2nd Nav -->
+    <nav class="max-w-[960px] mx-auto w-full flex overflow-x-auto px-4 md:px-6">
+      <div class="w-full lg:flex grid grid-cols-4 py-6 justify-start md:justify-center items-end gap-4 md:gap-10">
+
         <div class="flex flex-col w-auto h-22 items-center justify-end hover:scale-110 transition-all duration-200"
           data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50">
           <img src="./assets/ipad-air-double.svg" class="h-16" alt="">
@@ -510,15 +512,16 @@
   </header>
   <main>
     <!-- Hero Ipad -->
-    <section id="hero-ipad" class="w-full max-w-[1024px] py-16 mx-auto">
-      <div class="flex max-w-[1024px] mx-auto items-center justify-between mb-12">
-        <h1 class="text-7xl font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
-          data-aos-delay="150">iPad
+    <section id="hero-ipad" class="w-full max-w-[1024px] py-8 md:py-16 mx-auto px-4 md:px-6">
+      <div class="flex flex-col md:flex-row max-w-[1024px] mx-auto items-center justify-between mb-8 md:mb-12">
+        <h1 class="lg:text-7xl text-5xl font-semibold text-center md:text-left mb-4" data-aos="fade-up"
+          data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="150">iPad
         </h1>
-        <h5 class="text-2xl font-medium max-w-[280px]" data-aos="fade-up" data-aos-duration="500"
-          data-aos-easing="ease-in-out" data-aos-delay="300">Sentuh, gambar, dan ketik di satu perangkat istimewa.</h5>
+        <h5 class="text-lg md:text-2xl font-medium max-w-[280px] mt-4 md:mt-0 text-start" data-aos="fade-up"
+          data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="300">Sentuh, gambar,
+          dan ketik di satu perangkat istimewa.</h5>
       </div>
-      <iframe class="w-full h-[600px] overflow-hidden rounded-3xl"
+      <iframe class="w-full h-[320px] lg:h-[600px] overflow-hidden rounded-2xl md:rounded-3xl"
         src="https://www.youtube.com/embed/zXJbdtxh0XE?si=VuYQ1mIlGEJrGhRZ" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up" data-aos-duration="500"
@@ -526,13 +529,13 @@
     </section>
 
     <!-- Get To Know about Ipad -->
-    <section id="explore-ipad" class="w-full py-16">
+    <section id="explore-ipad" class="w-full py-8 md:py-16 px-4 md:px-6">
       <div class="flex max-w-[1024px] mx-auto items-center justify-start mb-8">
-        <h1 class="text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
-          data-aos-delay="50">Kenali iPad lebih dalam.</h1>
+        <h1 class="text-2xl md:text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500"
+          data-aos-easing="ease-in-out" data-aos-delay="50">Kenali iPad lebih dalam.</h1>
       </div>
 
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper max-w-[1024px] mx-auto">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide" style="display: flex;" data-aos="fade-left" data-aos-duration="500"
@@ -668,7 +671,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination w-full flex gap-1 justify-end pr-12">
+
+      <div class="max-w-[1024px] mx-auto swiper-pagination w-full flex gap-1 justify-center">
         <button class="btn-prev" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out"
           data-aos-delay="200">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
@@ -686,17 +690,19 @@
           </svg>
         </button>
       </div>
-      </div>
+
+
       </div>
     </section>
 
     <!-- Bandingkan iPad -->
-    <section id="bandingkan-ipad" class="w-full bg-background-gray pt-28 pb-20">
-      <div class="flex container mx-auto items-center justify-between mb-12" data-aos="fade-up" data-aos-duration="500"
-        data-aos-easing="ease-in-out" data-aos-delay="50">
-        <h1 class="text-4xl font-semibold">Jelajahi jajarannya</h1>
+    <section id="bandingkan-ipad" class="w-full bg-background-gray pt-12 md:pt-28 pb-12 md:pb-20 px-4 md:px-6">
+      <div
+        class="flex flex-col md:flex-row container mx-auto items-start md:items-center justify-between mb-8 md:mb-12 gap-4"
+        data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50">
+        <h1 class="text-2xl md:text-4xl font-semibold">Jelajahi jajarannya</h1>
         <a
-          class="flex items-center justify-end underline underline-offset-4 hover:underline-offset-8 text-lg font-medium max-w-[280px] text-blue-600 transition-all duration-300">Bandingkan
+          class="flex items-center justify-end underline underline-offset-4 hover:underline-offset-8 text-base md:text-lg font-medium max-w-[280px] text-blue-600 transition-all duration-300">Bandingkan
           semua
           model
           <span>
@@ -708,7 +714,7 @@
           </span>
         </a>
       </div>
-      <div class="grid grid-cols-4 container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-4 md:gap-6">
         <!-- Ipad Pro -->
         <div class="flex flex-col" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
           data-aos-delay="100">
@@ -923,12 +929,13 @@
     </section>
 
     <!-- Aksesoris iPad -->
-    <section id="aksesoris-ipad" class="w-full h-full bg-background-gray pb-28 pt-20">
-      <div class="flex container mx-auto items-center justify-between mb-12">
-        <h1 class="text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
-          data-aos-delay="50">Aksesoris Penting untuk iPad.</h1>
+    <section id="aksesoris-ipad" class="w-full h-full bg-background-gray pb-12 md:pb-28 pt-12 md:pt-20 px-4 md:px-6">
+      <div
+        class="flex flex-col md:flex-row container mx-auto items-start md:items-center justify-between mb-8 md:mb-12">
+        <h1 class="text-2xl md:text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500"
+          data-aos-easing="ease-in-out" data-aos-delay="50">Aksesoris Penting untuk iPad.</h1>
       </div>
-      <div class="grid grid-cols-2 gap-12 container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 container mx-auto">
         <!-- Apple Pencil -->
         <div class="flex flex-col hover:scale-105 transition-all duration-300" data-aos="fade-up"
           data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="100">
@@ -978,18 +985,21 @@
     </section>
 
     <!-- Accordion -->
-    <section id="accordion-section" class="w-full bg-white py-28">
-      <div class="flex max-w-[1160px] mx-auto items-center justify-between mb-12">
-        <h1 class="text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
-          data-aos-delay="100">Pasangan Sempurna.</h1>
+    <section id="accordion-section" class="w-full bg-white py-12 md:py-28 px-4 md:px-6">
+      <div
+        class="flex flex-col md:flex-row max-w-[1160px] mx-auto items-start md:items-center justify-between mb-8 md:mb-12">
+        <h1 class="text-2xl md:text-4xl font-semibold" data-aos="fade-up" data-aos-duration="500"
+          data-aos-easing="ease-in-out" data-aos-delay="100">Pasangan Sempurna.</h1>
       </div>
       <div class="max-w-[1160px] mx-auto" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
         data-aos-delay="200">
-        <div class="bg-background-gray rounded-3xl items-center flex px-10 py-6">
-          <div class="w-full max-w-[400px] p-10">
+        <div
+          class="bg-background-gray gap-8 rounded-2xl md:rounded-3xl items-center flex flex-col md:flex-row px-4 md:px-10 py-6">
+          <div class="w-full md:max-w-[400px] p-4 md:p-10">
             <div class="accordion border-b border-gray-300 mb-4">
-              <div id="ipad-iphone" onclick="toggleAccordion(event)"
-                class="text-2xl font-semibold flex justify-between items-center mb-6 cursor-pointer">iPad dan iPhone
+              <div id="ipad-watch" onclick="toggleAccordion(event)"
+                class="text-2xl font-semibold flex justify-between items-center mb-6 cursor-pointer">iPad dan
+                iPhone
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                   class="size-6 transition-all duration-300">
                   <path fill-rule="evenodd"
@@ -1054,12 +1064,12 @@
     </section>
 
     <!-- List iPad -->
-    <section id="list-ipad" class="w-full h-full bg-background-gray py-20">
-      <div class="flex max-w-[1080px] mx-auto items-center justify-between mb-12">
-        <h1 class="text-5xl font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
-          data-aos-delay="50">iPad</h1>
+    <section id="list-ipad" class="w-full h-full bg-background-gray py-12 md:py-20 px-4 md:px-6">
+      <div class="flex max-w-[1080px] mx-auto items-center justify-between mb-8 md:mb-12">
+        <h1 class="text-3xl md:text-5xl font-semibold" data-aos="fade-up" data-aos-duration="500"
+          data-aos-easing="ease-in-out" data-aos-delay="50">iPad</h1>
       </div>
-      <div class="flex max-w-[1080px] gap-20 mx-auto items-start">
+      <div class="flex flex-col md:flex-row max-w-[1080px] gap-8 md:gap-20 mx-auto items-start">
         <div class="flex flex-col">
           <ul class="mb-6">
             <li class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
@@ -1122,8 +1132,8 @@
     </section>
 
     <!-- Footnote -->
-    <section id="footnote w-full bg-white">
-      <div class="max-w-[1024px] mx-auto py-20">
+    <section id="footnote" class="w-full bg-white px-4 md:px-6">
+      <div class="max-w-[1024px] mx-auto py-12 md:py-20">
         <ul class="flex  flex-col text-xs/4 list-decimal text-gray-700" data-aos="fade-up" data-aos-duration="500"
           data-aos-easing="ease-in-out" data-aos-delay="100">
           <li class="mb-4">Aksesori dijual terpisah.</li>
@@ -1151,8 +1161,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="w-full h-full bg-background-gray">
-      <div class="max-w-[1024px] mx-auto py-12 text-gray-800">
+    <footer class="w-full h-full bg-background-gray px-4 md:px-6">
+      <div class="max-w-[1024px] mx-auto py-8 md:py-12 text-gray-800">
         <div class="flex gap-1 items-center" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
           data-aos-delay="100">
           <svg class="h-[44px] w-[14px] cursor-pointer fill-current" viewBox="0 0 14 44"
@@ -1166,10 +1176,10 @@
               d="M22.56 16.938l-5.508-5.5a1.493 1.493 0 0 0-2.116.003 1.502 1.502 0 0 0 .004 2.121L19.384 18l-4.444 4.438A1.502 1.502 0 0 0 15.996 25c.382 0 .764-.145 1.056-.438l5.508-5.5a1.502 1.502 0 0 0 0-2.125z">
             </path>
           </svg>
-          <p class="text-base font-medium">iPad</p>
+          <p class="text-sm md:text-base font-medium">iPad</p>
         </div>
         <hr class="my-4" />
-        <div class="grid grid-cols-4 text-sm">
+        <div class="grid grid-cols-2 md:grid-cols-4 text-xs md:text-sm gap-6 md:gap-0">
           <div class="flex flex-col gap-12" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
             data-aos-delay="150">
             <ul class="flex flex-col gap-2">
@@ -1230,84 +1240,13 @@
           </div>
         </div>
 
-        <div class="list-footer-accordion mx-auto text-sm hidden" data-aos="fade-up" data-aos-duration="500"
-          data-aos-easing="ease-in-out" data-aos-delay="300">
-          <button class="footer-accordion font-semibold">Belanja dan Belajar</button>
-          <div class="panel">
-            <ul>
-              <li>Mac</li>
-              <li>Iphone</li>
-              <li>Watch</li>
-              <li>Airpods</li>
-            </ul>
-          </div>
 
-          <button class="footer-accordion font-semibold">Dompet Apple</button>
-          <div class="panel">
-            <ul>
-              <li>Dompet</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Akun</button>
-          <div class="panel">
-            <ul>
-              <li>Kelola ID Apple anda</li>
-              <li>iCloud.com</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Hiburan</button>
-          <div class="panel">
-            <ul>
-              <li>Apple TV+</li>
-              <li>Apple One</li>
-              <li>Apple Music</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Bisnis</button>
-          <div class="panel">
-            <ul>
-              <li>Apple dan Bisnis</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Pedidikan</button>
-          <div class="panel">
-            <ul>
-              <li>Apple dan Pendidikan</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Nilai-nilai Apple</button>
-          <div class="panel">
-            <ul>
-              <li>Aksesibilitas</li>
-              <li>Pendidikan</li>
-              <li>Lingkungan</li>
-              <li>Privasi</li>
-            </ul>
-          </div>
-
-          <button class="footer-accordion font-semibold">Tentang Apple</button>
-          <div class="panel">
-            <ul>
-              <li>Newsroom</li>
-              <li>Kepemimpinan</li>
-              <li>Investor</li>
-              <li>Acara</li>
-              <li>Etika dan Kepatuhan</li>
-              <li>Hubungi Apple</li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-sm mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
+        <div class="text-xs md:text-sm mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
           data-aos-delay="50">
           <p><a href="www.apple.com/id/buy" class="underline text-blue-600">Temukan retailer</a> di dekat Anda.</p>
         </div>
         <hr class="my-4" />
-        <div class="flex justify-between text-sm">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-xs md:text-sm">
           <div class="copyright">
             <p>Hak cipta © 2024 Apple Inc. Seluruh hak cipta dilindungi undang-undang.</p>
           </div>

@@ -7,12 +7,59 @@
   body {
     @apply font-roboto font-normal text-base text-gray-900;
   }
+
+  @media (max-width: 768px) {
+    html,
+    body {
+      @apply text-sm;
+    }
+  }
+
+  @media (max-width: 640px) {
+    html,
+    body {
+      @apply text-xs;
+    }
+  }
+
   .swiper {
     @apply w-full h-[560px];
   }
+
+  @media (max-width: 768px) {
+    .swiper {
+      @apply h-[350px];
+    }
+  }
+
+  @media (max-width: 640px) {
+    .swiper {
+      @apply h-[280px];
+    }
+  }
+
   .swiper-slide {
     @apply w-[400px] flex;
   }
+
+  @media (max-width: 1024px) {
+    .swiper-slide {
+      @apply w-[350px];
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper-slide {
+      @apply w-[300px];
+    }
+  }
+
+  @media (max-width: 640px) {
+    .swiper-slide {
+      @apply w-[280px];
+    }
+  }
+
   .btn-next {
     @apply h-8 w-8 rounded-full flex justify-center items-center bg-gray-600 text-white fill-current;
   }
@@ -26,5 +73,33 @@
   .grid-list {
     grid-template-rows: minmax(160px, max-content), minmax(120px, max-content), minmax(120px, max-content);
     @apply gap-8 items-center justify-center text-center text-xs;
+  }
+
+  @media (max-width: 768px) {
+    .grid-list {
+      @apply gap-4 text-xs;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .grid-list {
+      @apply gap-2 text-xs grid-cols-1;
+    }
+  }
+}
+
+/* Mobile Navigation Styles */
+@layer components {
+  @media (max-width: 1024px) {
+    .group-hover\:h-\[472px\],
+    .group-hover\:h-\[436px\],
+    .group-hover\:h-\[360px\],
+    .group-hover\:h-\[296px\],
+    .group-hover\:h-\[292px\],
+    .group-hover\:h-\[424px\],
+    .group-hover\:h-\[384px\],
+    .group-hover\:h-\[224px\] {
+      @apply hidden;
+    }
   }
 }

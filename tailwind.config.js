@@ -23,6 +23,13 @@ module.exports = {
           'space-red': "#DE6274",
           'space-yellow': "#F0D95B",
         }
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       }
     }
   },
