@@ -1,6 +1,30 @@
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
+slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 440px
+    400: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    540: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
+    640: {
+      slidesPerView: 2.5,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  },
   centeredSlides: true,
 
   navigation: {
